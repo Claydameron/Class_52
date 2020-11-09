@@ -1,21 +1,15 @@
-h1 {
-    color: white;
+/** {
+    border: solid
 }
-
-/* * {
-    border: solid;
-} */
-
+*/
 .header{
-    background-color: cadetblue;
+    background-color: #808080;
     display: flex;
     justify-content: space-between;
 }
 
-.site-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: first baseline;
+.spacing{
+    margin-left: 10px;
 }
 
 .grid{
@@ -24,11 +18,59 @@ h1 {
     justify-content: space-evenly;
 }
 
+p,h2{
+    text-align: center;
+}
+
 .footer{
     display: flex;
     justify-content: flex-end;
 }
 
-p,h2{
-    text-align: center;
+.bodyBg{
+    background-color: orange;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item{
+    border: solid 5px;
+    border-top-color: aqua;
+    border-left-color: chartreuse;
+    border-bottom-color: darkorange;
+    border-right-color: firebrick;
+    position:relative;
+}
+
+body{
+    background-color: #f3f3;
+    color: gold;
+}
+
+.spacing2{
+    padding-left: 1325px;
+}
+
+a:link{
+    color: lightblue;
+}
+
+a:visited{
+    color:blue;
+}
+
+.item p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0;
+}
+
+.item:hover p{
+opacity:1;
+}
+
+.item:hover img{
+opacity:0.33;
 }
